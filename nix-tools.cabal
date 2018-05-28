@@ -81,6 +81,21 @@ executable hackage-to-nix
   hs-source-dirs:      hackage2nix
   default-language:    Haskell2010
 
+executable plan-to-nix
+  ghc-options:         -Wall
+  main-is:             Main.hs
+  build-depends:       base
+                     , nix-tools
+                     , hnix
+                     , text
+                     , unordered-containers
+                     , vector
+                     , aeson
+                     , microlens
+                     , microlens-aeson
+  hs-source-dirs:      plan2nix
+  default-language:    Haskell2010
+
 executable lts-to-nix
   ghc-options:         -Wall
   main-is:             Main.hs
