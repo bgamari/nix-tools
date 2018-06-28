@@ -17,7 +17,7 @@ library
   exposed-modules:     Cabal2Nix
                      , Cabal2Nix.Util
                      , Distribution.Nixpkgs.Fetch
-  build-depends:       base >=4.11 && <4.12
+  build-depends:       base >=4.10 && <4.12
                      , hnix == 0.4.0
                      , aeson
                      , process
@@ -38,7 +38,7 @@ library
 executable cabal-to-nix
   ghc-options:         -Wall
   main-is:             Main.hs
-  build-depends:       base >=4.11 && <4.12
+  build-depends:       base
                      , hnix == 0.4.0
                      , nix-tools
                      , filepath
@@ -50,7 +50,7 @@ executable cabal-to-nix
 executable hashes-to-nix
   ghc-options:         -Wall
   main-is:             Main.hs
-  build-depends:       base >=4.11 && <4.12
+  build-depends:       base
                      , hnix == 0.4.0
                      , nix-tools
                      , data-fix
@@ -99,7 +99,7 @@ executable plan-to-nix
 executable lts-to-nix
   ghc-options:         -Wall
   main-is:             Main.hs
-  build-depends:       base >=4.11 && <4.12
+  build-depends:       base
                      , nix-tools
                      , hnix == 0.4.0
                      , yaml
@@ -117,7 +117,7 @@ executable lts-to-nix
 executable stack-to-nix
   ghc-options:         -Wall
   main-is:             Main.hs
-  build-depends:       base >=4.11 && <4.12
+  build-depends:       base
                      , nix-tools
                      , transformers
                      , hnix == 0.4.0

@@ -6,6 +6,7 @@ import System.FilePath
 
 import Control.Monad
 import Data.String (IsString)
+import Data.Semigroup
 
 import Data.ByteString.Char8 (pack, unpack)
 import Crypto.Hash.SHA256 (hash)

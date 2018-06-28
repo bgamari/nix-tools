@@ -24,6 +24,7 @@ import Distribution.Compiler
 import Distribution.Types.PackageName (PackageName)
 import Distribution.Simple.BuildToolDepends (getAllToolDependencies)
 
+import Data.Semigroup
 import Data.String (fromString)
 
 -- import Distribution.Types.GenericPackageDescription
